@@ -563,6 +563,8 @@ img { max-width: 100%; }
     transition: var(--transition);
     border: 1px solid rgba(124,58,237,0.15);
     user-select: all;
+    word-break: break-all;
+    max-width: 100%;
 }
 .demo-value:hover { background: var(--purple); color: var(--white); }
 .demo-value.copied { background: var(--green); color: var(--white); border-color: var(--green); }
@@ -796,8 +798,16 @@ img { max-width: 100%; }
     .exp-head { flex-direction: column; }
     .stats-row { gap: 10px; }
     .stat { min-width: 70px; padding: 14px 8px; }
+    .demo-creds-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .demo-value { max-width: 100%; word-break: break-all; white-space: normal; }
+    .exp-card { padding: 20px; }
+    .about-card { padding: 24px; }
+    .tl-card { padding: 18px; }
 }
 @media (max-width: 575px) {
     .hero-actions { flex-direction: column; }
     .btn-main, .btn-ghost { text-align: center; }
+    .hero-visual { max-width: 240px; margin: 0 auto; }
+    .proj-actions { display: flex; flex-direction: column; gap: 8px; }
+    .btn-live { justify-content: center; }
 }
